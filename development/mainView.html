@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/icons/OkWarningInfoIcons/styles/fontello.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="mainView__header">
+      <a class="mainView__header-link" href="/">
+        <h1 class="mainView__header-logo">
+          <span id="first">Zaplanuj</span>
+          <span id="second">Jedzonko</span>
+        </h1>
+      </a>
+      <div class="mainView__header-user">
+        <span class="mainView__header-user-name">Imię</span>
+        <i class="icon-user-circle-o mainView__header-user-icon"></i>
+      </div>
+    </header>
+    <div class="mainView__mainContent">
+      <aside class="mainView__aside">
+        <ul class="mainView__aside-list">
+          <li class="mainView__aside-list-el active">
+            <a class="mainView__aside-list-el-link" href="./mainView.html">
+              Pulpit</a
+            >
+          </li>
+          <li class="mainView__aside-list-el">
+            <a class="mainView__aside-list-el-link" href="recipes.html"
+              >Przepisy</a
+            >
+          </li>
+          <li class="mainView__aside-list-el">
+            <a class="mainView__aside-list-el-link" href="./plans.html"
+              >Plany</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="mainView__main">
+        <div class="widgets">
+          <a href="#" class="widgets__button widgets__addRecipe">
+            <div class="widgets-plus">+</div>
+            <p class="widgets__text">dodaj przepis</p>
+          </a>
+          <a href="#" class="widgets__button widgets__addPlan">
+            <div class="widgets-plus">+</div>
+            <p class="widgets__text">dodaj plan</p>
+          </a>
+          <div class="widgets__infos">
+            <div class="widgets__infos-info">
+              <i class="widgets__infos-icon icon-info-circled"></i>
+              Liczba przepisów:
+              <span class="widgets__infos-info-number">99</span>
+              , nieźle!
+              <button
+                class="widgets__infos-info-close widgets__infos-close-btn"
+              >
+                x
+              </button>
+            </div>
+            <div class="widgets__infos-important">
+              <i class="widgets__infos-icon icon-attention-circled"></i>
+              Pamiętaj, aby dodać plan!
+              <button
+                class="widgets__infos-important-close widgets__infos-close-btn"
+              >
+                x
+              </button>
+            </div>
+            <div class="widgets__infos-gj">
+              <i class="widgets__infos-icon icon-ok-circled"></i>
+              Świetnie że jesteś! Udanego planowania i smacznego!
+              <button class="widgets__infos-gj-close widgets__infos-close-btn">
+                x
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="weekView-container">
+          <table class="weekView">
+            <caption class="weekView-title">
+              Twój plan na {nr_tygodnia} tydzień:
+            </caption>
+            <thead class="weekView-head">
+              <tr>
+                <td>Poniedziałek</td>
+                <td>Wtorek</td>
+                <td>Środa</td>
+                <td>Czwartek</td>
+                <td>Piątek</td>
+                <td>Sobota</td>
+                <td>Niedziela</td>
+              </tr>
+            </thead>
+            <tbody class="weekView-meals">
+              <tr>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+                <td>sniadanie</td>
+              </tr>
+              <tr>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+                <td>drugie sniadanie</td>
+              </tr>
+              <tr>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+                <td>zupa</td>
+              </tr>
+              <tr>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+                <td>drugie<br />danie</td>
+              </tr>
+              <tr>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+                <td>kolacja</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="weekView-btn">
+            <button><a href=""><< Poprzedni</a></button>
+            <button><a href="">Następny >></a></button>
+          </div>
+        </div>
+
+        <div class="addPlan hide">
+          <div class="addPlan__header">
+            <h3 class="addPlan__header-header">NOWY PLAN</h3>
+            <button class="addPlan__header-btn">Zapisz i zamnij</button>
+          </div>
+          <div class="addPlan__main">
+            <div class="addPlan__main-descr">
+              <div class="addPlan__main-descr-el">
+                <label class="addPlan__main-descr-el-label" for="planName"
+                  >Nazwa planu
+                </label>
+                <input
+                  class="addPlan__main-descr-el-input addPlan__main-descr-el-input-name"
+                  type="text"
+                  name="planName"
+                  id="planName"
+                />
+              </div>
+              <div class="addPlan__main-descr-el">
+                <label class="addPlan__main-descr-el-label" for="planDescr">
+                  Opis planu</label
+                >
+                <input
+                  class="addPlan__main-descr-el-input addPlan__main-descr-el-input-descr"
+                  type="text"
+                  name="planDescr"
+                  id="planDescr"
+                />
+              </div>
+              <div class="addPlan__main-descr-el">
+                <label class="addPlan__main-descr-el-label" for="weekNumber"
+                  >Numer tygodnia
+                </label>
+                <input
+                  class="addPlan__main-descr-el-input addPlan__main-descr-el-input-num"
+                  type="number"
+                  name="weekNumber"
+                  id="weekNumber"
+                />
+              </div>
+            </div>
+            <table class="addPlan__list">
+              <tbody class="addPlan__list-body">
+                <tr class="addPlan__list-meals">
+                  <th
+                    class="addPlan__list-meals-el addPlan__list-meals-el_no-border"
+                  >
+                    &nbsp;
+                  </th>
+                  <th class="addPlan__list-meals-el">ŚNIADANIE</th>
+                  <th class="addPlan__list-meals-el">DRUGIE ŚNIADANIE</th>
+                  <th class="addPlan__list-meals-el">ZUPA</th>
+                  <th class="addPlan__list-meals-el">DRUGIE DANIE</th>
+                  <th class="addPlan__list-meals-el">KOLACJA</th>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">PONIEDZIAŁEK</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">WTOREK</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">ŚRODA</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">CZWARTEK</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">PIĄTEK</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">SOBOTA</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="addPlan__list-day">NIEDZIELA</th>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                  <td class="addPlan__list-day-options">
+                    <select class="addPlan__list-day-select">
+                      <option class="addPlan__list-day-select-el">
+                        Pierwsza opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        druga opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        trzecia opcja
+                      </option>
+                      <option class="addPlan__list-day-select-el">
+                        czwarta opcja
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="recipeAdd__container hide">
+          <form action="recipes.html" id="addRecipe__form">
+            <div class="recipeAdd__mainContainer mainContainer__size">
+              <div class="recipeAdd__container__title__button">
+                <div class="recipeAdd__container__title">NOWY PRZEPIS</div>
+                <a href="recipes.html">
+                  <button
+                    class="recipeAdd__container__button"
+                    id="recipeAdd__button__add__recipe"
+                  >
+                    Zapisz i zamknij
+                  </button>
+                </a>
+              </div>
+              <div class="recipeAdd__container__input__label">
+                <label for="recipeName">Nazwa przepis</label>
+                <input type="text" id="recipeName" name="recipeName" />
+              </div>
+              <div class="recipeAdd__container__input__label">
+                <label for="recipeDescription">Opis przepisu</label>
+                <textarea
+                  id="recipeDescription"
+                  name="recipeDescription"
+                ></textarea>
+              </div>
+              <div class="recipeAdd__instructions_and_ingredients">
+                <div class="recipeAdd__instructions">
+                  <div>INSTRUKCJE</div>
+                  <textarea id="recipeAdd__addInstruction_textarea"></textarea>
+                  <button id="recipeAdd__addInstruction">Dodaj</button>
+                  <ol id="recipeAdd_orderList"></ol>
+                </div>
+                <div class="recipeAdd__ingredients">
+                  <div>SKŁADNIKI</div>
+                  <textarea></textarea>
+                  <button id="recipeAdd__addIngredients">Dodaj</button>
+                  <ul></ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./js/mainView.js"></script>
+    <script type="module" src="./js/widgets.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

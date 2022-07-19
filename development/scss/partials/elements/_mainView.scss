@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Charmonman");
+@use "sass:math";
+
+body {
+  position: relative;
+}
+
+.mainView__header {
+  min-height: 80px;
+  background-color: $colorOfHeaderAndColumns;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+
+  h1 {
+    font-family: Charmonman;
+    font-size: 34px;
+  }
+
+  body {
+    background-color: #292f32;
+  }
+
+  #first {
+    font-weight: 100;
+    color: white;
+  }
+
+  #second {
+    color: #e58a20;
+    font-weight: 700;
+  }
+
+  .mainView__header-user {
+    color: white;
+    font-size: 25px;
+  }
+
+  .mainView__header-user-icon {
+    color: $colorOfLogoSecondPart;
+  }
+}
+
+.mainView__mainContent {
+  height: calc(100vh - 80px);
+  display: flex;
+
+  .mainView__aside {
+    background-color: $colorOfNavigation;
+    min-width: 234px;
+  }
+
+  .mainView__main {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../assets/backgroundOfAplication.png");
+    position: relative;
+  }
+
+  .mainView__aside-list-el {
+    height: 75px;
+    position: relative;
+  }
+
+  .mainView__aside-list-el-link {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    height: 100%;
+    padding-left: 20px;
+    line-height: 75px;
+  }
+}
+
+.weekView-container {
+  width: 1069px;
+  height: 441px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fffffa;
+  padding: 0 45px;
+  border: 1px dashed rgb(91, 96, 95);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .weekView {
+    //height: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    .weekView-title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: $colorOfButtons;
+      padding: 10px;
+    }
+
+    .weekView-head {
+      font-family: "Open Sans", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(91, 96, 95);
+    }
+
+    .weekView-meals {
+      font-family: "Open Sans", sans-serif;
+      color: rgb(161, 161, 148);
+      font-size: 20px;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+
+    .weekView-meals,
+    td {
+      padding: 10px;
+      border-top: 1px solid rgb(161, 161, 148);
+    }
+  }
+
+  .weekView-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      color: $colorOfButtons;
+    }
+  }
+}

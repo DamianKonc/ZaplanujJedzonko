@@ -1,0 +1,26 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+@import "partials/generic/reset";
+@import "partials/elements/fonts";
+@import "../assets/fonts/icons/FbTwitterInstaUser/styles/fontello.css";
+@import "partials/elements/_colors.scss";
+@import "partials/elements/basic_styles";
+@import "partials/elements/mainView.scss";
+@import "partials/elements/_newsletter.scss";
+@import "partials/settings/_mixins.scss";
+@import "partials/elements/header";
+@import "partials/elements/about_page";
+@import "partials/elements/recipes.scss";
+@import "partials/elements/_about_application.scss";
+@import "partials/elements/landingPage_CtA";
+@import "partials/elements/footer";
+@import "partials/elements/carousel";
+@import "partials/elements/addRecipe";
+@import "partials/elements/widgets";
+@import "partials/elements/newPlan";
+@import "partials/elements/welcomescreen";
+@import "partials/elements/plans.scss";

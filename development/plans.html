@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="mainView__header">
+      <a class="mainView__header-link" href="/">
+        <h1 class="mainView__header-logo">
+          <span id="first">Zaplanuj</span>
+          <span id="second">Jedzonko</span>
+        </h1>
+      </a>
+      <div class="mainView__header-user">
+        <span class="mainView__header-user-name">Imię</span>
+        <i class="icon-user-circle-o mainView__header-user-icon"></i>
+      </div>
+    </header>
+    <div class="mainView__mainContent">
+      <aside class="mainView__aside">
+        <ul class="mainView__aside-list">
+          <li class="mainView__aside-list-el">
+            <a class="mainView__aside-list-el-link" href="./mainView.html">
+              Pulpit</a
+            >
+          </li>
+          <li class="mainView__aside-list-el">
+            <a class="mainView__aside-list-el-link" href="recipes.html"
+              >Przepisy</a
+            >
+          </li>
+          <li class="mainView__aside-list-el active">
+            <a class="mainView__aside-list-el-link" href="./plans.html"
+              >Plany</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="mainView__main">
+        <div class="mainView__planList">
+          <header class="mainView__planList-header">
+            <h3 class="mainView__planList-header-text">Lista Planów</h3>
+            <button class="mainView__planList-header-btn">+</button>
+          </header>
+          <div class="mainView__planList-list">
+            <div class="mainView__planList-list-header">
+              <div class="mainView__planList-list-header-id">ID</div>
+              <div class="mainView__planList-list-header-name">NAZWA</div>
+              <div class="mainView__planList-list-header-descr">OPIS</div>
+              <div class="mainView__planList-list-header-week">TYDZIEŃ</div>
+              <div class="mainView__planList-list-header-actions">AKCJE</div>
+            </div>
+            <div class="mainView__planList-list-items">
+              <div class="mainViev-planList-item">
+                <div class="planList-item-id">1</div>
+                <div class="planList-item-name">Plan Blitzkrieg</div>
+                <div class="planList-item-descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  repellat non minus repellendus perspiciatis incidunt in, ab
+                  quasi maxime minima nam corporis. Ex eligendi ipsa aliquid
+                  atque alias cum, dignissimos eaque accusamus
+                </div>
+                <div class="planList-item-week">8</div>
+                <div class="planList-item-actions">
+                  <button class="planList-item-actions-edit">Edytuj</button>
+                  <button class="planList-item-actions-delete">Kasuj</button>
+                </div>
+              </div>
+              <div class="mainViev-planList-item">
+                <div class="planList-item-id">2</div>
+                <div class="planList-item-name">Fall Gelb</div>
+                <div class="planList-item-descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  repellat non minus repellendus perspiciatis incidunt in, ab
+                  quasi maxime minima nam corporis. Ex eligendi ipsa aliquid
+                  atque alias cum, dignissimos eaque accusamus
+                </div>
+                <div class="planList-item-week">12</div>
+                <div class="planList-item-actions">
+                  <button class="planList-item-actions-edit">Edytuj</button>
+                  <button class="planList-item-actions-delete">Kasuj</button>
+                </div>
+              </div>
+              <div class="mainViev-planList-item">
+                <div class="planList-item-id">3</div>
+                <div class="planList-item-name">Fortitude</div>
+                <div class="planList-item-descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  repellat non minus repellendus perspiciatis incidunt in, ab
+                  quasi maxime minima nam corporis. Ex eligendi ipsa aliquid
+                  atque alias cum, dignissimos eaque accusamus
+                </div>
+                <div class="planList-item-week">20</div>
+                <div class="planList-item-actions">
+                  <button class="planList-item-actions-edit">Edytuj</button>
+                  <button class="planList-item-actions-delete">Kasuj</button>
+                </div>
+              </div>
+              <div class="mainViev-planList-item">
+                <div class="planList-item-id">4</div>
+                <div class="planList-item-name">Mickey Mouse</div>
+                <div class="planList-item-descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  repellat non minus repellendus perspiciatis incidunt in, ab
+                  quasi maxime minima nam corporis. Ex eligendi ipsa aliquid
+                  atque alias cum, dignissimos eaque accusamus
+                </div>
+                <div class="planList-item-week">666</div>
+                <div class="planList-item-actions">
+                  <button class="planList-item-actions-edit">Edytuj</button>
+                  <button class="planList-item-actions-delete">Kasuj</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./js/service/resipes/recipes.js"></script>
+    <script type="module" src="./js/widgets.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

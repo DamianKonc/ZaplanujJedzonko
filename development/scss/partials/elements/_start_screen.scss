@@ -1,0 +1,63 @@
+.start-panel {
+  width: 1069px;
+  height: 629px;
+  background-color: #fffffa;
+  margin: 100px auto;
+
+  .start-box {
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .start-name {
+      width: 300px;
+      height: 25px;
+      padding: 0 10px;
+      margin-top: 18px;
+      margin-bottom: 15px;
+      color: $colorOfNavigation;
+    }
+
+    .start-hello {
+      font-size: 34px;
+      padding-bottom: 20px;
+      color: $colorOfNavigation;
+      font-weight: 600;
+    }
+
+    .start-firsttime {
+      font-size: 24px;
+      color: $colorOfNavigation;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+    .start-btn {
+      padding: 6px 10px;
+      font-size: 20px;
+      font-weight: 600;
+      width: 126px;
+      height: 40px;
+
+      background-color: $colorOfButtons;
+      margin: 0 auto;
+      border: none;
+
+      .start-a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .start-out {
+      font-size: 20px;
+      padding-top: 20px;
+      color: $colorOfNavigation;
+      line-height: 30px;
+      font-weight: 600;
+    }
+  }
+}

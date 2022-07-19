@@ -1,0 +1,67 @@
+.recipes__container {
+  .recipes__container__title__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $colorOfRow;
+    padding: 20px 20px 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    .recipes__container__title {
+      @include recipesContainerTitle;
+    }
+
+    .recipes__container__button {
+      @include buttonAdd;
+    }
+  }
+
+  .recipes__container__header {
+    padding: 20px;
+    border-top: 2px solid $colorOfRow;
+    margin: 15px 40px;
+    color: $colorOfHeaderAndColumns;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $colorOfHeaderAndColumns;
+  }
+
+  .recipes_added_container {
+    display: flex;
+    padding: 20px;
+    margin: 15px 40px;
+    border-bottom: 1px solid $colorOfHeaderAndColumns;
+  }
+
+  .recipes__id {
+    width: 10%;
+    text-align: center;
+  }
+
+  .recipes__name {
+    width: 20%;
+  }
+
+  .recipes__description {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .recipes__action {
+    width: 20%;
+    text-align: center;
+  }
+
+  @include recipesContainer;
+}
+
+.button__edit {
+  @include buttonEdit;
+}
+
+.button__delete {
+  @include buttonDelete;
+}

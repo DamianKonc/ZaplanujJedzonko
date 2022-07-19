@@ -1,0 +1,31 @@
+.hide {
+  display: none;
+}
+
+.active {
+  font-weight: bold;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 5px;
+    background-color: $colorOfButtons;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "\e800";
+    font-family: "fontello";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: $colorOfButtons;
+    z-index: 2;
+  }
+}

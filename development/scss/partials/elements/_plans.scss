@@ -1,0 +1,71 @@
+.mainView__planList {
+  box-sizing: border-box;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-top: 2%;
+  padding: 50px;
+
+  .mainView__planList-header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $colorOfHeaderAndColumns;
+    padding: 5px;
+  }
+  .mainView__planList-header-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: $colorOfButtons;
+  }
+  .mainView__planList-header-btn {
+    background-color: $colorOfSuccess;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .mainView__planList-list {
+    margin: auto;
+    margin-top: 20px;
+    width: 85%;
+  }
+
+  .mainView__planList-list-header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: [first] 3% [second] 12% [third] 46% [fifth] 15% [last] 15% [end];
+    gap: 2%;
+    min-height: 50px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid $colorOfNavigation;
+  }
+}
+
+.mainView__planList-list-items {
+  height: 100%;
+}
+
+.mainViev-planList-item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: [first] 3% [second] 12% [third] 46% [fifth] 15% [last] 15% [end];
+  gap: 2%;
+  border-top: 1px solid $colorOfNavigation;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  .planList-item-descr {
+    font-size: 16px;
+  }
+  .planList-item-actions {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,83 @@
+.landingPage__carousel {
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  .landingPage__carousel-el {
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .landingPage__carousel-el-1 {
+    background-image: linear-gradient(
+        rgba(255, 252, 252, 0.7),
+        rgba(233, 229, 229, 0.7)
+      ),
+      url("../../../assets/food/photo1.jpg");
+  }
+  .landingPage__carousel-el-2 {
+    background-image: linear-gradient(
+        rgba(255, 252, 252, 0.7),
+        rgba(233, 229, 229, 0.7)
+      ),
+      url("../../../assets/food/photo2.jpg");
+  }
+  .landingPage__carousel-el-3 {
+    background-image: linear-gradient(
+        rgba(255, 252, 252, 0.7),
+        rgba(233, 229, 229, 0.7)
+      ),
+      url("../../../assets/food/photo3.jpg");
+  }
+
+  .landingPage__carousel-el-container {
+    max-width: 70%;
+  }
+
+  .landingPage__carousel-el-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .landingPage__carousel-el-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .landingPage__carousel-el-btn {
+    border: none;
+    font-size: 40px;
+    margin: 0 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .landingPage__carousel-el-btn:hover {
+    cursor: pointer;
+  }
+
+  .landingPage__carousel-el-btn-1 {
+    z-index: 1;
+  }
+
+  .landingPage__carousel-el-btn-2 {
+    right: 0;
+  }
+
+  .show {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,75 @@
+.recipeAdd__container {
+  @include recipesContainer;
+  position: absolute;
+  left: 4px;
+  width: 99%;
+  height: 70%;
+
+  .recipeAdd__mainContainer {
+    @include mainContainer__size;
+    //border-bottom: 2px solid $colorOfRow;
+    //display: flex;
+    //justify-content: space-between;
+    //border: 3px solid black;
+
+    .recipeAdd__container__title__button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0 5px 0;
+      border-bottom: 2px solid $colorOfRow;
+      //margin-top: 10px;
+      //margin-right: 10px;
+      //margin-left: 10px;
+
+      border-color: green;
+
+      .recipeAdd__container__title {
+        @include recipesContainerTitle;
+      }
+
+      .recipeAdd__container__button {
+        @include buttonSave;
+      }
+    }
+
+    .recipeAdd__instructions_and_ingredients {
+      display: flex;
+
+      .recipeAdd__instructions {
+        width: 50%;
+        overflow: hidden;
+        //list-style: decimal;
+      }
+
+      .recipeAdd__ingredients {
+        width: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.recipeAdd__container__input__label {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    @include label;
+  }
+
+  input {
+    @include input;
+  }
+
+  textarea {
+    display: block;
+    font-size: 10px;
+    border-color: 1px solid $colorOfRow;
+    margin-right: 20px;
+    width: 70%;
+    line-height: 15px;
+    min-height: 100px;
+  }
+}
